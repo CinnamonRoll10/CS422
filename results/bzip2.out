@@ -1,0 +1,98 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║             PART 1: DYNAMIC INSTRUCTION PROFILE              ║
+╚══════════════════════════════════════════════════════════════╝
+  Fast-Forward Count : 301000000000
+  Total Instructions : 302000000002
+
+#    Type                     Count          Percent   
+-------------------------------------------------------
+1    Loads                    452705379      26.885%
+2    Stores                   231174449      13.729%
+3    NOPs                     36514          0.002%
+4    Direct Calls             791554         0.047%
+5    Indirect Calls           18             0.000%
+6    Returns                  791569         0.047%
+7    Uncond Branches          21299344       1.265%
+8    Cond Branches            129923031      7.716%
+9    Logical Ops              71001117       4.217%
+10   Rotate & Shift           61832369       3.672%
+11   Flag Ops                 6130           0.000%
+12   Vector (AVX)             0              0.000%
+13   Cond Moves               0              0.000%
+14   MMX/SSE                  0              0.000%
+15   System Calls             0              0.000%
+16   Floating Point           0              0.000%
+17   The Rest                 714314267      42.421%
+-------------------------------------------------------
+     Total                    1683875741
+
+╔══════════════════════════════════════════════════════════════╗
+║                   PART 2: CPI ANALYSIS                       ║
+╚══════════════════════════════════════════════════════════════╝
+  Total Cycles:               48871583873
+  Total Instructions:         1683875741
+  CPI:                        29.0233
+
+╔══════════════════════════════════════════════════════════════╗
+║             PART 3: MEMORY FOOTPRINT                         ║
+╚══════════════════════════════════════════════════════════════╝
+  Unique 32-byte instruction chunks:    780
+  Unique 32-byte data chunks:           2528517
+
+  Instruction chunks  [ single : multi ] = 902089947 : 97910045
+  Data chunks         [ single : multi ] = 602692921 : 0
+
+╔══════════════════════════════════════════════════════════════╗
+║               PART 4: ia32 ISA PROPERTIES                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+  [ Instruction Length Distribution ]
+  Length    Count          
+  -----------------------
+  1         38611493       
+  2         219201810      
+  3         436966893      
+  4         75326595       
+  5         22046844       
+  6         141356395      
+  7         51341720       
+  8         15085632       
+  10        62610          
+
+  [ Operand Count Distribution ]
+  Operands  Count          
+  -----------------------
+  0         36514          
+  1         6147           
+  2         597647608      
+  3         382870395      
+  4         2693762        
+  5         14191359       
+  6         2554207        
+
+  [ Register & Memory Operand Counts ]
+  ----------------------------------------
+  2 register read operands:          533608733
+  1 register write operand:          712781772
+  3 memory operands:                 0
+  1 memory read operand:             452705379
+  2 memory write operands:           0
+
+  [ Immediate Values ]
+  ----------------------------------------
+  Min:           -858993459
+  Max:           1431655766
+
+  [ Displacement Values ]
+  ----------------------------------------
+  Min:           -4848
+  Max:           135000192
+
+  [ Memory Bytes Touched ]
+  ----------------------------------------
+  Max bytes:     8
+  Avg bytes:     3.4854
+
+╚══════════════════════════════════════════════════════════════╝
+
